@@ -1,0 +1,32 @@
+import numpy as np
+
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+print("Enter elements of first matrix:")
+matrix1 = []
+
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix1.append(row)
+
+print("Enter elements of second matrix:")
+matrix2 = []
+
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix2.append(row)
+
+A = np.array(matrix1)
+B = np.array(matrix2)
+
+C = A + B
+
+print("First Matrix:")
+print(A)
+
+print("Second Matrix:")
+print(B)
+
+print("Addition of matrices:")
+print(C)
