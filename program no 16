@@ -1,0 +1,27 @@
+name = input("Enter Student Name: ")
+roll = input("Enter Roll Number: ")
+
+maths = float(input("Enter Maths marks: "))
+physics = float(input("Enter Physics marks: "))
+chemistry = float(input("Enter Chemistry marks: "))
+
+total = maths + physics + chemistry
+percentage = total / 3
+
+print("\nStudent Name:", name)
+print("Roll Number:", roll)
+print("Percentage:", percentage)
+
+if maths >= physics and maths >= chemistry:
+    print("Highest marks: Maths =", maths)
+elif physics >= maths and physics >= chemistry:
+    print("Highest marks: Physics =", physics)
+else:
+    print("Highest marks: Chemistry =", chemistry)
+
+if maths <= physics and maths <= chemistry:
+    print("Lowest marks: Maths =", maths)
+elif physics <= maths and physics <= chemistry:
+    print("Lowest marks: Physics =", physics)
+else:
+    print("Lowest marks: Chemistry =", chemistry)
